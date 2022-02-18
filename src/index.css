@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+  font-family: 'Mochiy Pop P One', sans-serif;
+/* "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
