@@ -4,7 +4,7 @@ import { Sidebar } from './components/Sidebar';
 import {Box} from '@mui/material'
 import Header from './components/Header';
 import Home from './pages/olympus/home';
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, Navigate} from 'react-router-dom';
 import Bond from './pages/olympus/bond';
 import {makeStyles} from "@mui/styles"
 import Stake from './pages/olympus/stake';
@@ -32,7 +32,9 @@ function App() {
           <Route path='stake' element ={ <Stake/>}/>
           <Route path='ohmies' element ={ <Home/>}/>
           <Route path='treasury' element ={ <Home/>}/>
+          <Route path='*' element={<Navigate to = "olympus/overview"/>}/>
         </Route>
+        <Route path='*' element={<Navigate to = "olympus/overview"/>}/>
       </Routes>
       </Box>
       
